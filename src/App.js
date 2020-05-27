@@ -1,8 +1,10 @@
 import React from 'react';
 import Navigation from './Components/Navigation/Navigation';
-import Logo from './Components/Logo/Logo'
+import Logo from './Components/Logo/Logo';
+import ImageLink from './Components/ImageLink/ImageLink';
 import './App.css';
 import 'tachyons';
+
 
 function App() {
   return (
@@ -10,9 +12,10 @@ function App() {
       <Navigation />
       
       <Logo />
+      <ImageLink />
       {/*
       <Count / >
-      <FaceRecognitionlink />
+      
         <ImageRecognition />
       */}
 
