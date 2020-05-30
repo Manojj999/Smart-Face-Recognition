@@ -12,9 +12,8 @@ import './App.css';
 import 'tachyons';
 
 const app = new Clarifai.App({
-  apiKey: '81c45269c345456588c57e777fcd2d11'
+  apiKey: '81c45269c345456588c57e777fcd2d11',
 });
-
 const particlesOptions = {
   particles: {
     number: {
@@ -40,7 +39,7 @@ class App extends Component {
 
   faceLocation = (data) => {
     const clarifaiFace = data.outputs[0].data.regions[0].region_info.bounding_box;
-    const image = document.getElementById('inputImage');
+    const image = document.getElementById('inputimage');
     const width = Number(image.width);
     const height = Number(image.height);
     return {
@@ -52,7 +51,7 @@ class App extends Component {
     }
   }
 
-  diaplayFace = (box) => {
+  displayFace = (box) => {
     this.setState({ box: box })
   }
 
